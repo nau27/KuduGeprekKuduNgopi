@@ -1,0 +1,121 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="styleguide.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+/** @type {import('tailwindcss').Config} */
+tailwind.config = {
+  
+  corePlugins: {
+    preflight: false,
+  },
+  theme: {
+    extend: {
+      
+      colors:{
+        "kudu-semantic-background-default": "var(--kudu-semantic-background-default)",
+      "kudu-semantic-brand-primary": "var(--kudu-semantic-brand-primary)",
+      "kudu-semantic-status-danger": "var(--kudu-semantic-status-danger)",
+      "kudu-semantic-status-progress": "var(--kudu-semantic-status-progress)",
+      "kudu-semantic-status-success": "var(--kudu-semantic-status-success)",
+      "kudu-semantic-surface-card": "var(--kudu-semantic-surface-card)",
+      "kudu-semantic-text-primary": "var(--kudu-semantic-text-primary)",
+      
+      },fontFamily:{
+        "kudu-inter-bold-10px-18": "var(--kudu-inter-bold-10px-18-font-family)",
+      "kudu-inter-bold-11px-4": "var(--kudu-inter-bold-11px-4-font-family)",
+      "kudu-inter-bold-12px-1": "var(--kudu-inter-bold-12px-1-font-family)",
+      "kudu-inter-bold-12px-16": "var(--kudu-inter-bold-12px-16-font-family)",
+      "kudu-inter-bold-13px-19": "var(--kudu-inter-bold-13px-19-font-family)",
+      "kudu-inter-extra-bold-13px-17": "var(--kudu-inter-extra-bold-13px-17-font-family)",
+      "kudu-inter-extra-bold-17px-10": "var(--kudu-inter-extra-bold-17px-10-font-family)",
+      "kudu-inter-extra-bold-24px-15": "var(--kudu-inter-extra-bold-24px-15-font-family)",
+      "kudu-inter-extra-bold-28px-14": "var(--kudu-inter-extra-bold-28px-14-font-family)",
+      "kudu-inter-medium-11px-12": "var(--kudu-inter-medium-11px-12-font-family)",
+      "kudu-inter-medium-11px-24": "var(--kudu-inter-medium-11px-24-font-family)",
+      "kudu-inter-regular-10px-29": "var(--kudu-inter-regular-10px-29-font-family)",
+      "kudu-inter-regular-10px-34": "var(--kudu-inter-regular-10px-34-font-family)",
+      "kudu-inter-regular-11px-25": "var(--kudu-inter-regular-11px-25-font-family)",
+      "kudu-inter-regular-11px-7": "var(--kudu-inter-regular-11px-7-font-family)",
+      "kudu-inter-regular-12px-6": "var(--kudu-inter-regular-12px-6-font-family)",
+      "kudu-inter-regular-13px-27": "var(--kudu-inter-regular-13px-27-font-family)",
+      "kudu-inter-regular-14px-3": "var(--kudu-inter-regular-14px-3-font-family)",
+      "kudu-inter-regular-9px-33": "var(--kudu-inter-regular-9px-33-font-family)",
+      "kudu-inter-semi-bold-11px-11": "var(--kudu-inter-semi-bold-11px-11-font-family)",
+      "kudu-inter-semi-bold-12px-13": "var(--kudu-inter-semi-bold-12px-13-font-family)",
+      "kudu-inter-semi-bold-13px-20": "var(--kudu-inter-semi-bold-13px-20-font-family)",
+      "kudu-inter-semi-bold-14px-9": "var(--kudu-inter-semi-bold-14px-9-font-family)",
+      "kudu-permanent-marker-regular-10-149999618530273px-26": "var(--kudu-permanent-marker-regular-10-149999618530273px-26-font-family)",
+      "kudu-permanent-marker-regular-11-199999809265137px-31": "var(--kudu-permanent-marker-regular-11-199999809265137px-31-font-family)",
+      "kudu-permanent-marker-regular-13-300000190734863px-21": "var(--kudu-permanent-marker-regular-13-300000190734863px-21-font-family)",
+      "kudu-permanent-marker-regular-17-5px-0": "var(--kudu-permanent-marker-regular-17-5px-0-font-family)",
+      "kudu-permanent-marker-regular-21px-32": "var(--kudu-permanent-marker-regular-21px-32-font-family)",
+      "kudu-permanent-marker-regular-23px-22": "var(--kudu-permanent-marker-regular-23px-22-font-family)",
+      "kudu-permanent-marker-regular-24px-28": "var(--kudu-permanent-marker-regular-24px-28-font-family)",
+      "kudu-permanent-marker-regular-25px-23": "var(--kudu-permanent-marker-regular-25px-23-font-family)",
+      "kudu-permanent-marker-regular-26px-30": "var(--kudu-permanent-marker-regular-26px-30-font-family)",
+      "kudu-permanent-marker-regular-28px-5": "var(--kudu-permanent-marker-regular-28px-5-font-family)",
+      "kudu-permanent-marker-regular-32px-8": "var(--kudu-permanent-marker-regular-32px-8-font-family)",
+      "kudu-permanent-marker-regular-42px-2": "var(--kudu-permanent-marker-regular-42px-2-font-family)",
+      
+      },boxShadow:{
+        "kudu-elevation-1": "var(--kudu-elevation-1)",
+      "kudu-elevation-2": "var(--kudu-elevation-2)",
+      
+      },
+      },
+  },
+  plugins: [],
+}
+        </script>
+</head>
+<body>
+<div class="flex flex-col min-h-[844px] items-start relative bg-kudu-semantic-background-default" data-kudu-primitives-mode="default" data-kudu-semantic-mode="light"><div class="flex-col items-start flex-[0_0_auto] bg-kudu-semantic-brand-primary flex relative self-stretch w-full" ><div class="flex items-center justify-between pt-3.5 pb-3 px-6 relative self-stretch w-full flex-[0_0_auto]" ><div class="relative w-fit mt-[-1.00px] font-kudu-inter-semi-bold-13px-20 font-[number:var(--kudu-inter-semi-bold-13px-20-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-semi-bold-13px-20-font-size)] tracking-[var(--kudu-inter-semi-bold-13px-20-letter-spacing)] leading-[var(--kudu-inter-semi-bold-13px-20-line-height)] whitespace-nowrap [font-style:var(--kudu-inter-semi-bold-13px-20-font-style)]" >9:41</div>
+<img class="relative flex-[0_0_auto]" src="img/connectivity.svg" /></div>
+<div class="flex items-center gap-2 pt-1 pb-4 px-5 relative self-stretch w-full flex-[0_0_auto]" ><div class="relative w-[18px] h-[18px]" ><img class="absolute w-[86.24%] h-[84.17%] top-[15.83%] left-[13.76%]" src="img/vector-2.svg" /></div>
+<div class="relative w-fit mt-[-0.50px] font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] whitespace-nowrap [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >Kembali ke pesanan</div></div></div>
+<div class="flex-col items-start gap-[var(--kudu-primitives-space-24)] pt-[var(--kudu-primitives-space-20)] pr-[var(--kudu-primitives-space-20)] pb-[var(--kudu-primitives-space-20)] pl-[var(--kudu-primitives-space-20)] flex-[0_0_auto] flex relative self-stretch w-full" ><div class="flex flex-col items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto]" ><div class="mt-[-1.00px] font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-[#686863] text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] relative self-stretch [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >RINGKASAN PESANAN</div>
+<div class="flex-col items-start gap-[var(--kudu-primitives-space-10)] pt-[var(--kudu-primitives-space-14)] pr-[var(--kudu-primitives-space-14)] pb-[var(--kudu-primitives-space-14)] pl-[var(--kudu-primitives-space-14)] bg-kudu-semantic-surface-card rounded-[var(--kudu-primitives-radius-16)] overflow-hidden border border-solid border-[#e7e7e1] shadow-kudu-elevation-1 flex relative self-stretch w-full flex-[0_0_auto]" ><div class="items-center justify-between flex relative self-stretch w-full flex-[0_0_auto] gap-[var(--kudu-primitives-space-0)]" ><div class="w-fit mt-[-1.00px] font-kudu-inter-bold-13px-19 font-[number:var(--kudu-inter-bold-13px-19-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-13px-19-font-size)] leading-[var(--kudu-inter-bold-13px-19-line-height)] whitespace-nowrap relative tracking-[var(--kudu-inter-bold-13px-19-letter-spacing)] [font-style:var(--kudu-inter-bold-13px-19-font-style)]" >Pesan dari Meja 05</div></div>
+<div class="items-start justify-between flex relative self-stretch w-full flex-[0_0_auto] gap-[var(--kudu-primitives-space-0)]" ><div class="w-fit mt-[-1.00px] font-kudu-inter-semi-bold-14px-9 font-[number:var(--kudu-inter-semi-bold-14px-9-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-semi-bold-14px-9-font-size)] leading-[var(--kudu-inter-semi-bold-14px-9-line-height)] whitespace-nowrap relative tracking-[var(--kudu-inter-semi-bold-14px-9-letter-spacing)] [font-style:var(--kudu-inter-semi-bold-14px-9-font-style)]" >3 Item — Rp42.000</div>
+<div class="inline-flex items-start pt-[var(--kudu-primitives-space-4)] pr-[var(--kudu-primitives-space-9)] pb-[var(--kudu-primitives-space-4)] pl-[var(--kudu-primitives-space-9)] relative flex-[0_0_auto] bg-kudu-semantic-background-default rounded-[var(--kudu-primitives-radius-7)] overflow-hidden gap-[var(--kudu-primitives-space-0)]" ><div class="w-fit mt-[-1.00px] font-kudu-inter-bold-11px-4 font-[number:var(--kudu-inter-bold-11px-4-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-11px-4-font-size)] leading-[var(--kudu-inter-bold-11px-4-line-height)] whitespace-nowrap relative tracking-[var(--kudu-inter-bold-11px-4-letter-spacing)] [font-style:var(--kudu-inter-bold-11px-4-font-style)]" >Belum dibayar</div></div></div>
+<div class="relative self-stretch w-full h-px bg-[#e7e7e1]" ></div>
+<div class="flex flex-col items-start gap-[var(--kudu-primitives-space-6)] relative self-stretch w-full flex-[0_0_auto]" ><div class="self-stretch mt-[-1.00px] font-kudu-inter-regular-11px-7 font-[number:var(--kudu-inter-regular-11px-7-font-weight)] text-[#686863] text-[length:var(--kudu-inter-regular-11px-7-font-size)] leading-[var(--kudu-inter-regular-11px-7-line-height)] relative tracking-[var(--kudu-inter-regular-11px-7-letter-spacing)] [font-style:var(--kudu-inter-regular-11px-7-font-style)]" >Tanpa biaya tambahan.</div></div></div></div>
+<div class="flex-col items-start gap-[18px] flex-[0_0_auto] flex relative self-stretch w-full" ><div class="flex flex-col items-start gap-1 w-full flex-[0_0_auto] relative self-stretch" ><div class="relative self-stretch mt-[-1.00px] font-kudu-permanent-marker-regular-23px-22 font-[number:var(--kudu-permanent-marker-regular-23px-22-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-permanent-marker-regular-23px-22-font-size)] tracking-[var(--kudu-permanent-marker-regular-23px-22-letter-spacing)] leading-[var(--kudu-permanent-marker-regular-23px-22-line-height)] [font-style:var(--kudu-permanent-marker-regular-23px-22-font-style)]" >Bayarnya pakai apa?</div>
+<p class="relative self-stretch font-kudu-inter-regular-12px-6 font-[number:var(--kudu-inter-regular-12px-6-font-weight)] text-[#686863] text-[length:var(--kudu-inter-regular-12px-6-font-size)] tracking-[var(--kudu-inter-regular-12px-6-letter-spacing)] leading-[var(--kudu-inter-regular-12px-6-line-height)] [font-style:var(--kudu-inter-regular-12px-6-font-style)]" >Pilih satu metode pembayaran di bawah ini.</p></div>
+<div class="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]" ><div class="flex items-center gap-2 relative self-stretch w-full flex-[0_0_auto]" ><div class="relative w-[17px] h-[17px]" ><img class="absolute w-[92.50%] h-[92.50%] top-[7.50%] left-[7.50%]" src="img/image.svg" /></div>
+<div class="relative flex-1 mt-[-1.00px] font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >QRIS</div>
+<div class="relative w-fit font-kudu-inter-bold-11px-4 font-[number:var(--kudu-inter-bold-11px-4-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-11px-4-font-size)] tracking-[var(--kudu-inter-bold-11px-4-letter-spacing)] leading-[var(--kudu-inter-bold-11px-4-line-height)] whitespace-nowrap [font-style:var(--kudu-inter-bold-11px-4-font-style)]" >Terpilih</div></div>
+<div class="flex h-[62px] items-center gap-[var(--kudu-primitives-space-8)] pt-[var(--kudu-primitives-space-10)] pr-[var(--kudu-primitives-space-10)] pb-[var(--kudu-primitives-space-10)] pl-[var(--kudu-primitives-space-10)] relative self-stretch w-full bg-[#fff8cf] rounded-[var(--kudu-primitives-radius-10)] overflow-hidden border-[1.5px] border-solid border-kudu-semantic-brand-primary" ><div class="flex w-[18px] h-[18px] items-center justify-center relative rounded-[var(--kudu-primitives-radius-100)] overflow-hidden border-[1.5px] border-solid border-kudu-semantic-text-primary gap-[var(--kudu-primitives-space-0)]" ><div class="relative w-2 h-2 bg-kudu-semantic-text-primary rounded" ></div></div>
+<p class="flex-1 [font-family:'Inter-Bold',Helvetica] font-normal text-kudu-semantic-text-primary text-xs leading-[16.8px] relative tracking-[0]" ><span class="font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-[#1a1a1a] font-kudu-inter-bold-12px-1 [font-style:var(--kudu-inter-bold-12px-1-font-style)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] text-[length:var(--kudu-inter-bold-12px-1-font-size)]" >QRIS · Scan &amp; bayar<br/></span>
+<span class="[font-family:'Inter-Regular',Helvetica] text-[#686863] text-[11px] leading-[15.4px]" >Bisa lewat aplikasi bank atau e-wallet.</span></p></div></div>
+<div class="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]" ><div class="flex items-center gap-2 relative self-stretch w-full flex-[0_0_auto]" ><div class="relative w-[17px] h-[17px]" ><img class="absolute w-[92.50%] h-[92.50%] top-[7.50%] left-[7.50%]" src="img/vector-3.svg" /></div>
+<div class="relative flex-1 mt-[-1.00px] font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >E-wallet</div></div>
+<div class="h-11 items-center gap-[var(--kudu-primitives-space-8)] pt-[var(--kudu-primitives-space-10)] pr-[var(--kudu-primitives-space-10)] pb-[var(--kudu-primitives-space-10)] pl-[var(--kudu-primitives-space-10)] bg-kudu-semantic-surface-card rounded-[var(--kudu-primitives-radius-10)] overflow-hidden border border-solid border-[#e7e7e1] flex relative self-stretch w-full" ><div class="relative w-[18px] h-[18px] rounded-[var(--kudu-primitives-radius-100)] border-[1.5px] border-solid border-[#686863] gap-[var(--kudu-primitives-space-0)]" ></div>
+<div class="relative flex-1 font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >GoPay</div></div>
+<div class="h-11 items-center gap-[var(--kudu-primitives-space-8)] pt-[var(--kudu-primitives-space-10)] pr-[var(--kudu-primitives-space-10)] pb-[var(--kudu-primitives-space-10)] pl-[var(--kudu-primitives-space-10)] bg-kudu-semantic-surface-card rounded-[var(--kudu-primitives-radius-10)] overflow-hidden border border-solid border-[#e7e7e1] flex relative self-stretch w-full" ><div class="relative w-[18px] h-[18px] rounded-[var(--kudu-primitives-radius-100)] border-[1.5px] border-solid border-[#686863] gap-[var(--kudu-primitives-space-0)]" ></div>
+<div class="relative flex-1 font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >OVO</div></div>
+<div class="h-11 items-center gap-[var(--kudu-primitives-space-8)] pt-[var(--kudu-primitives-space-10)] pr-[var(--kudu-primitives-space-10)] pb-[var(--kudu-primitives-space-10)] pl-[var(--kudu-primitives-space-10)] bg-kudu-semantic-surface-card rounded-[var(--kudu-primitives-radius-10)] overflow-hidden border border-solid border-[#e7e7e1] flex relative self-stretch w-full" ><div class="relative w-[18px] h-[18px] rounded-[var(--kudu-primitives-radius-100)] border-[1.5px] border-solid border-[#686863] gap-[var(--kudu-primitives-space-0)]" ></div>
+<div class="relative flex-1 font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >DANA</div></div></div>
+<div class="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]" ><div class="flex items-center gap-2 relative self-stretch w-full flex-[0_0_auto]" ><div class="relative w-[17px] h-[17px]" ><img class="absolute w-[92.62%] h-[96.68%] top-[3.32%] left-[7.38%]" src="img/vector.svg" /></div>
+<div class="relative flex-1 mt-[-1.00px] font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >Virtual account bank</div></div>
+<div class="h-11 items-center gap-[var(--kudu-primitives-space-8)] pt-[var(--kudu-primitives-space-10)] pr-[var(--kudu-primitives-space-10)] pb-[var(--kudu-primitives-space-10)] pl-[var(--kudu-primitives-space-10)] bg-kudu-semantic-surface-card rounded-[var(--kudu-primitives-radius-10)] overflow-hidden border border-solid border-[#e7e7e1] flex relative self-stretch w-full" ><div class="relative w-[18px] h-[18px] rounded-[var(--kudu-primitives-radius-100)] border-[1.5px] border-solid border-[#686863] gap-[var(--kudu-primitives-space-0)]" ></div>
+<div class="relative flex-1 font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >BCA</div></div>
+<div class="h-11 items-center gap-[var(--kudu-primitives-space-8)] pt-[var(--kudu-primitives-space-10)] pr-[var(--kudu-primitives-space-10)] pb-[var(--kudu-primitives-space-10)] pl-[var(--kudu-primitives-space-10)] bg-kudu-semantic-surface-card rounded-[var(--kudu-primitives-radius-10)] overflow-hidden border border-solid border-[#e7e7e1] flex relative self-stretch w-full" ><div class="relative w-[18px] h-[18px] rounded-[var(--kudu-primitives-radius-100)] border-[1.5px] border-solid border-[#686863] gap-[var(--kudu-primitives-space-0)]" ></div>
+<div class="relative flex-1 font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >BNI</div></div>
+<div class="h-11 items-center gap-[var(--kudu-primitives-space-8)] pt-[var(--kudu-primitives-space-10)] pr-[var(--kudu-primitives-space-10)] pb-[var(--kudu-primitives-space-10)] pl-[var(--kudu-primitives-space-10)] bg-kudu-semantic-surface-card rounded-[var(--kudu-primitives-radius-10)] overflow-hidden border border-solid border-[#e7e7e1] flex relative self-stretch w-full" ><div class="relative w-[18px] h-[18px] rounded-[var(--kudu-primitives-radius-100)] border-[1.5px] border-solid border-[#686863] gap-[var(--kudu-primitives-space-0)]" ></div>
+<div class="relative flex-1 font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] leading-[var(--kudu-inter-bold-12px-1-line-height)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >Mandiri</div></div></div></div></div>
+<div class="flex-col items-start gap-3 pt-4 pb-2.5 px-5 flex-[0_0_auto] bg-kudu-semantic-text-primary flex relative self-stretch w-full" ><div class="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]" ><div class="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]" ><div class="mt-[-1.00px] font-kudu-inter-regular-12px-6 font-[number:var(--kudu-inter-regular-12px-6-font-weight)] text-[length:var(--kudu-inter-regular-12px-6-font-size)] leading-[var(--kudu-inter-regular-12px-6-line-height)] relative w-fit text-kudu-semantic-surface-card tracking-[var(--kudu-inter-regular-12px-6-letter-spacing)] whitespace-nowrap [font-style:var(--kudu-inter-regular-12px-6-font-style)]" >Total pembayaran</div>
+<div class="relative w-fit font-kudu-inter-bold-11px-4 font-[number:var(--kudu-inter-bold-11px-4-font-weight)] text-kudu-semantic-brand-primary text-[length:var(--kudu-inter-bold-11px-4-font-size)] tracking-[var(--kudu-inter-bold-11px-4-letter-spacing)] leading-[var(--kudu-inter-bold-11px-4-line-height)] whitespace-nowrap [font-style:var(--kudu-inter-bold-11px-4-font-style)]" >QRIS · 3 Item</div></div>
+<div class="font-kudu-inter-extra-bold-24px-15 font-[number:var(--kudu-inter-extra-bold-24px-15-font-weight)] text-[length:var(--kudu-inter-extra-bold-24px-15-font-size)] leading-[var(--kudu-inter-extra-bold-24px-15-line-height)] relative w-fit text-kudu-semantic-surface-card tracking-[var(--kudu-inter-extra-bold-24px-15-letter-spacing)] whitespace-nowrap [font-style:var(--kudu-inter-extra-bold-24px-15-font-style)]" >Rp42.000</div></div>
+<div class="flex h-12 items-center justify-center gap-[var(--kudu-primitives-space-8)] pt-[var(--kudu-primitives-space-11)] pr-[var(--kudu-primitives-space-14)] pb-[var(--kudu-primitives-space-11)] pl-[var(--kudu-primitives-space-14)] relative self-stretch w-full bg-kudu-semantic-brand-primary rounded-[var(--kudu-primitives-radius-10)] overflow-hidden border border-solid border-transparent" ><div class="relative w-[17px] h-[17px]" ><img class="absolute w-[84.46%] h-[84.46%] top-[15.54%] left-[15.54%]" src="img/vector-5.svg" /></div>
+<div class="w-fit font-kudu-inter-bold-12px-1 font-[number:var(--kudu-inter-bold-12px-1-font-weight)] text-kudu-semantic-text-primary text-[length:var(--kudu-inter-bold-12px-1-font-size)] leading-[var(--kudu-inter-bold-12px-1-line-height)] whitespace-nowrap relative tracking-[var(--kudu-inter-bold-12px-1-letter-spacing)] [font-style:var(--kudu-inter-bold-12px-1-font-style)]" >Konfirmasi Pembayaran</div></div>
+<div class="flex items-center justify-center gap-1.5 relative self-stretch w-full flex-[0_0_auto]" ><div class="relative w-[13px] h-[13px]" ><img class="absolute w-[97.44%] h-[97.44%] top-[2.56%] left-[2.56%]" src="img/vector-4.svg" /></div>
+<p class="relative w-fit mt-[-1.00px] font-kudu-inter-regular-11px-7 font-[number:var(--kudu-inter-regular-11px-7-font-weight)] text-kudu-semantic-surface-card text-[length:var(--kudu-inter-regular-11px-7-font-size)] tracking-[var(--kudu-inter-regular-11px-7-letter-spacing)] leading-[var(--kudu-inter-regular-11px-7-line-height)] whitespace-nowrap [font-style:var(--kudu-inter-regular-11px-7-font-style)]" >Kode QR akan muncul setelah konfirmasi.</p></div>
+<div class="flex items-start justify-center pt-[5px] pb-0 px-0 relative self-stretch w-full flex-[0_0_auto]" ><div class="relative w-[134px] h-1 bg-kudu-semantic-surface-card rounded-[var(--kudu-primitives-radius-3)]" ></div></div></div></div>
+</body>
+</html>

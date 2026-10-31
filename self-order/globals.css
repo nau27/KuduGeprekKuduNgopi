@@ -28,3 +28,48 @@ a {
   font-family: "Permanent Marker";
   src: local("Permanent Marker");
 }
+
+.page-topbar {
+  display: flex;
+  align-items: center;
+  padding: 18px 18px 0;
+}
+
+.menu-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(26, 26, 26, 0.12);
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.08);
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-back-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(16, 24, 40, 0.12);
+}
+
+.menu-back-button img {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 420px) {
+  .page-topbar {
+    padding: 14px 14px 0;
+  }
+
+  .menu-back-button {
+    padding: 8px 12px;
+    font-size: 0.72rem;
+  }
+}
